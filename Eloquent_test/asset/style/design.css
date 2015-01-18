@@ -1,0 +1,263 @@
+* {
+padding : 0;
+margin : 0;
+}
+
+body {
+background : #fff;
+font-family : calibri;
+background-image : url(bg_index.png);
+background-position : top center;
+background-repeat : no-repeat;
+background-size : 1980px 1080px;
+}
+
+ul {list-style : none;}
+h2 {font-family : UnZialish;}
+.largeur { width : 780px; margin : 0 auto;}
+.clear {clear : both;}
+.page {margin-top : 80px;}
+
+/***** HEADER *****/
+
+header {width : 780px;height : 72px;}
+header menu {width : 780px; height : 72px;  }
+header menu #logo{ float : left; background-color : #222224; border-bottom : 2px solid black;}
+header menu li {
+float : left;
+width : 200px;
+height : 45px;
+text-align : center;
+color : #fff;
+font-weight : bold;
+padding-top : 25px;
+background-color : #222224;
+border-bottom : 2px solid black;
+}
+
+header menu #logo:hover,header menu li:hover {
+background-color : #C82605;
+border-bottom : 2px solid #fff;
+transition : 1.5s;
+}
+
+header a {
+text-decoration : none;
+color : #000;
+}
+
+/***** FOOTER *****/
+footer {
+width : 770px;
+height : 18px;
+background-color : #000;
+color : #fff;
+padding : 5px;
+font-size : 10px;
+}
+
+/***** PERSONNAGE *****/
+
+#content {height : 530px;background-color : #000;}
+#content h2 { color : #EACFB8;}
+
+.wrap_left, .wrap_right {
+width : 370px;
+height : 300px;
+background-color : #696969;
+float : left;
+margin : 5px;
+padding : 5px;
+}
+
+.wrap_left h2, .wrap_right h2 {
+text-align : center;
+margin-bottom : 10px;
+margin-top : 5px;
+}
+
+.wrap_left img {
+width : 240px;
+height : 240px;
+margin : 0 65px;
+border : 5px solid #fff;
+}
+
+.span_left, .span_right{
+color : #EACFB8;
+}
+
+.span_left {
+display : block;
+width : 200px;
+height : 20px;
+float : left;
+margin-left : 40px;
+}
+
+.span_right {
+display : block;
+width : 50px;
+height : 20px;
+float : right;
+margin-right : 40px;
+}
+
+#inventaire {
+width : 760px;
+height : 190px;
+padding : 5px;
+margin : 5px;
+background-color : #696969;
+}
+
+#inventaire h2 {
+margin-left : 30px;
+}
+
+/* display hover */
+.box_item {
+background-color : #999;
+width : 50px;
+height : 50px;
+float : left;
+margin : 23.5px 0 0 23.5px ;
+}
+
+.box_item  img{
+width : 50px;
+height : 50px;
+}
+
+.box_item_display ,.box_mob_display {
+display : none;
+}
+
+.box_item:hover .box_item_display {
+display : block;
+width : 500px;
+height : 200px;
+position : absolute;
+}
+
+.box_item:hover .box_item_display img {
+width : auto;
+height : auto;
+}
+
+.box_item_display .wrap_display {
+border : 1px solid black;
+background-color : #fff;
+}
+
+.box_item:hover .box_mob_display {
+display : block;
+width : 500px;
+height : 200px;
+position : absolute;
+}
+
+.box_item:hover .box_mob_display img {
+width : 300px;
+height : auto;
+float : left;
+}
+
+.box_mob_display .wrap_display {
+border : 1px solid black;
+background-color : #fff;
+}
+
+
+
+/* end display hover */
+
+#info_perso {
+height : 150px;
+}
+
+#skills {
+height : 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content_arena {
+	height : 530px;
+	background-color : #696969;
+}
+
+#annonce_combat {
+	height: 255px;
+}
+
+#annonce_combat #img_arena_perso {
+	width : 250px;
+	height : 250px;
+	float: left;
+	margin : 5px 0 0 5px;
+}
+
+#annonce_combat #img_arena_ennemy {
+	width : 250px;
+	height : 250px;
+	float: right;
+	margin : 5px 5px 0 0;
+}
+
+#stats {
+	height: 330px;
+}
+
+#stats #info_perso {
+	float: left;
+	width : 240px;
+	height: 240px;
+	background-color: #793616;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+#stats #info_perso input {
+	margin-top : 15px;
+	width : 100px;
+	height : 30px;
+	float : left;
+}
+
+#stats #info_perso li input{
+	border : 1px solid black;
+	width : 240px;
+	margin-top : 15px;
+}
+
+#stats #info_combat, #stats #info_ennemy {
+	float: left;
+	width : 240px;
+	height: 240px;
+	background-color: #793616;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+#info_perso h2 , #info_combat h2, #info_ennemy h2 {
+	text-align : center;
+}
+
+#info_perso , #info_combat, #info_ennemy {
+	padding : 5px;
+}
+
+#info_perso ul, #info_ennemy ul {
+	margin-top : 10px;
