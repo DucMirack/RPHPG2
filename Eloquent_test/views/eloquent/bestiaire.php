@@ -1,4 +1,4 @@
-
+<?php $bdd = new PDO('mysql:host=localhost;dbname=rphpg_test;charset=utf8', 'root', ''); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,8 +16,8 @@
 				<menu>
 					<img src="asset/images/logo.png" alt="RPHPG" id="logo"/>
 					<ul>
-						<a href="index.php"><li>Personnage</li></a>
-						<a href="bestiaire.php"><li>Bestiaire</li></a>
+						<a href="#"><li>Personnage</li></a>
+						<a href="#"><li>Bestiaire</li></a>
 						<a href="#"><li>Arène</li></a>
 					</ul>
 		            <div class="clear"></div>
@@ -28,25 +28,25 @@
 			<!-- DEBUT CONTENT -->
 			<div id="content">
 				<div class="wrap_left">
-					<h2></h2>
+					<h2><?php echo $this->data['character']['p_name'];	?></h2>
 					<img src="asset/images/avatar.jpg" id="avatar"/>
 				</div>
 				<div class="wrap_right">
 					<div  id="info_perso">
 						<h2>Caractéristiques</h2>
 						<ul>
-							<li><span class="span_left">Point de vie</span><span class="span_right"></span></li>
-							<li><span class="span_left">Mana</span><span class="span_right"></span></li>
-							<li><span class="span_left">Défense</span><span class="span_right"></span></li>
-							<li><span class="span_left">Vitesse</span><span class="span_right"></span></li>
+							<li><span class="span_left">Point de vie</span><span class="span_right"><?php echo $this->data['character']['p_hpmax']?></span></li>
+							<li><span class="span_left">Mana</span><span class="span_right"><?php echo $this->data['character']['p_mana']?></span></li>
+							<li><span class="span_left">Défense</span><span class="span_right"><?php echo $this->data['character']['p_defense']?></span></li>
+							<li><span class="span_left">Vitesse</span><span class="span_right"><?php echo $this->data['character']['p_speed']?></span></li>
 						</ul>
 					</div>
 
 					<div id="skills">
 						<h2>Compétences</h2>
 						<ul>
-							<li><span class="span_left">Attaque rapide</span><span class="span_right"></span></li>
-							<li><span class="span_left">Attaque lente</span><span class="span_right"></span></li>
+							<li><span class="span_left">Attaque rapide</span><span class="span_right"><?php echo $this->data['character']['p_fasthit']?></span></li>
+							<li><span class="span_left">Attaque lente</span><span class="span_right"><?php echo $this->data['character']['p_slowhit']?></span></li>
 						</ul>
 					</div>
 					<div class="clear"></div>

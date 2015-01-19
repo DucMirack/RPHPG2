@@ -55,10 +55,10 @@
 							<h2>Combat</h2>
 
 							<?php if ($this->data['ennemy']['e_life'] < 0){
-								echo "Victoire";
+								echo "<h1>Victoire</h1>";
 							}
 							else if ($this->data['character']['p_hp'] < 0) {
-								echo "Défaite";
+								echo "<h1>Défaite</h1>";
 							} 
 							else {
 							echo "Vous infligez ". $this->data['pvEnnemyLost'] ." points de vie à ".$this->data['ennemy']['e_name']."<br/>";

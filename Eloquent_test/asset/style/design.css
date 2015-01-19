@@ -6,7 +6,7 @@ margin : 0;
 body {
 background : #fff;
 font-family : calibri;
-background-image : url(bg_index.png);
+background-image : url(http://localhost/Eloquent_test/asset/images/bg_index.png);
 background-position : top center;
 background-repeat : no-repeat;
 background-size : 1980px 1080px;

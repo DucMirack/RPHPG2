@@ -17,7 +17,7 @@
 					<img src="http://localhost/Eloquent_test/asset/images/logo.png" alt="RPHPG" id="logo"/>
 					<ul>
 						<a href="#"><li>Personnage</li></a>
-						<a href="/Eloquent_test/views/eloquent/bestiaire.php"><li>Bestiaire</li></a>
+						<a href="#"><li>Bestiaire</li></a>
 						<a href="#"><li>Arène</li></a>
 					</ul>
 		            <div class="clear"></div>

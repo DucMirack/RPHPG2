@@ -34,12 +34,6 @@ $app->get('/', function() use ($app)
   $app->render('eloquent/arene.php',array("character" => $character1, "ennemy" => $ennemy1));
   });
 
-$app->post('/index.php', function() use ($app)
-{
-  $character1=User::find(2);
-  $ennemy1=Ennemy::find(1);
-  $app->render('eloquent/index.php',array("character" => $character1));
-  });
 
 $app->post('/', function() use ($app)
 {
